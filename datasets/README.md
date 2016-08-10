@@ -3,8 +3,9 @@ The addition problem is a toy benchmark used to evaluate the power of RNNs in le
 - **The multiplication problem**:
 The multiplication problem is another toy benchmark very similar to the addition problem. The difference is that instead of predicting the sum of x 0 at two time steps when the mask has a value of 1, the goal is to predict the product of x 0 when the masking signal is unity.
 - **Embedded Reber grammar**:
+- 
+Task is to learn the "embedded Reber grammar", e.g. Smith and Zipser (1989), Cleeremans et al. (1989), and Fahlman (1991). It allows for training sequences with short time lags (of as few as 9 steps), it is not a long time lag problem.
 http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/reberGrammar.php
-
 - **MNIST classification with sequential presentation of pixels**:
 This is yet another challenging toy problem where the objective is to classify the MNIST digits when the 784 pixels are presented sequentially to the recurrent net. We follow the procedure described in (Quoc et al., 2015) and the RNN reads one pixel at a time in a scanline order, starting at the top left corner of the MNIST image and ending at the bottom right corner of the image. The RNN is asked to predict the label for the input image.
 (two tasks: one where pixels are read in order (from left to right, bottom to top) and one where the pixels are all randomly
