@@ -3,7 +3,6 @@ The addition problem is a toy benchmark used to evaluate the power of RNNs in le
 - **The multiplication problem**:
 The multiplication problem is another toy benchmark very similar to the addition problem. The difference is that instead of predicting the sum of x 0 at two time steps when the mask has a value of 1, the goal is to predict the product of x 0 when the masking signal is unity.
 - **Embedded Reber grammar**:
-- 
 Task is to learn the "embedded Reber grammar", e.g. Smith and Zipser (1989), Cleeremans et al. (1989), and Fahlman (1991). It allows for training sequences with short time lags (of as few as 9 steps), it is not a long time lag problem.
 http://christianherta.de/lehre/dataScience/machineLearning/neuralNetworks/reberGrammar.php
 - **MNIST classification with sequential presentation of pixels**:
